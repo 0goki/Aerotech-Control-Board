@@ -36,13 +36,13 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 
 ## Revisions
 
-| Mainboard | Notes |
-| ------------- | ------------- |
-| MB01202026  | First physical production run with JLCPCB. KICAD Nightly 9.99 |
+| Mainboard | EDA | Production Notes |
+| ------------- | ------------- | ------------- |
+| MB01202026  | KICAD Nightly 9.99 | First physical production run with JLCPCB. |
 
-| Breakout | Notes |
-| ------------- | ------------- |
-| BO01162026 | First physical production run with JLCPCB. KICAD Nightly 9.99 |
+| Breakout | EDA | Production Notes |
+| ------------- | ------------- | ------------- |
+| BO01162026 | KICAD Nightly 9.99 | First physical production run with JLCPCB. |
 
 ## Breakout/Daughterboards
 
