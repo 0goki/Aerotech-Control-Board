@@ -25,15 +25,15 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 
 | Feature | Description | Testing Status | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| ESP32-S3 | Microcontroller | Working | Additional GPIO are needed. Planned switch to STM32 |
+| ESP32-S3 | Microcontroller | Working | Additional GPIO are needed. Planned switch to STM32. |
 | USB-C | 5Vin and D+/- | Working | |
 | 5V Regulator | For 5V | Working | |
-| DC 5-24Vin | For 5-24V input | Working/Issues | Trace width inadequate. Jumper for 5V USB to DC net not properly connected |
+| DC 5-24Vin | For 5-24V input | Working/Issues | Trace width inadequate. Jumper for 5V USB to DC net not properly connected. |
 | High Current Mosfets | for 5-24V output | Not Working | Redesign required. Pull up resistor over-wattage. Short to GND. Flyback bridged. |
 | Optical Isolator | 3.3V logic isolation | Working | |
 | Logic Invertor | Inverts DIO | To Be Removed | Logic does not need negation. |
 | SD Card | Read/write data | Working | Read/Write using FAT32. Tested with up to 512GB Sabrent V60. |
-| Input 5-to-3.3V Level Shifter | Steps down logic level | Working | Reads 5V TTL|
+| Input 5-to-3.3V Level Shifter | Steps down logic level | Working | Reads 5V TTL. |
 
 ## PCB Specs
 
