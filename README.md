@@ -32,7 +32,7 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 | High Current Mosfets | for 5-24V output | Not Working | Redesign required. Pull up resistor over-wattage. Short to GND. Flyback bridged. |
 | Optical Isolator | 3.3V logic isolation | Working | |
 | Logic Invertor | Inverts DIO | To Be Removed | Logic does not need negation. |
-| SD Card | Read/write data | TBA | |
+| SD Card | Read/write data | Working | Read/Write using FAT32. Tested with up to 512GB Sabrent V60. |
 | Input 5-to-3.3V Level Shifter | Steps down logic level | TBA | |
 
 ## PCB Specs
