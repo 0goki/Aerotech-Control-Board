@@ -33,7 +33,7 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 | Optical Isolator | 3.3V logic isolation | Working | |
 | Logic Invertor | Inverts DIO | To Be Removed | Logic does not need negation. |
 | SD Card | Read/write data | Working | Read/Write using FAT32. Tested with up to 512GB Sabrent V60. |
-| Input 5-to-3.3V Level Shifter | Steps down logic level | TBA | |
+| Input 5-to-3.3V Level Shifter | Steps down logic level | Working | Reads 5V TTL|
 
 ## PCB Specs
 
