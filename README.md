@@ -6,6 +6,21 @@ An ESP32-based microcontroller with an opto-isolated level shifter designed to t
 
 Designed for Aerotech gantry systems running Automation1 and wired for Position Synchronized Output (PSO).
 
+## Important Pinouts
+
+| Function | Pin |
+| - | - |
+| SCK | GPIO 40 |
+| MISO | GPIO 39 |
+| MOSI | GPIO 41 |
+| CS | GPIO 42 |
+| CARD_DETECT | GPIO 3 |
+| SDA | GPIO 12 |
+| SCL | GPIO 13 |
+| PSO00 | GPIO 47 |
+| PSO01 | GPIO 48 |
+| PSO02 | GPIO 45 |
+
 ## Feature Testing
 
 | Feature | Description | Testing Status | Notes |
