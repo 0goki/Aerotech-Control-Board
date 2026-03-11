@@ -6,17 +6,23 @@ An ESP32-based microcontroller with an opto-isolated level shifter designed to t
 
 Designed for Aerotech gantry systems running Automation1 and wired for Position Synchronized Output (PSO).
 
-<img width="1200" height="836" alt="sm_black_top" src="https://github.com/user-attachments/assets/35cbbdf6-8c85-434f-909e-3500baba582c" />
+## Feature Testing
 
-## Breakout/Daughterboards
-
-<img width="1200" height="237" alt="sm_white_top" src="https://github.com/user-attachments/assets/46c673bb-b144-46be-9756-3017a54b88fc" />
-
-The PCB includes built-in pogo pin connectors to support various breakout/daughterboard options.
-
-[Github page to H-Bridge breakout board.](https://github.com/0goki/-HVDLS-HBridge)
+| Feature | Description | Testing Status | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| ESP32-S3 | Microcontroller | Working | Additional GPIO are needed. Planned switch to STM32 |
+| USB-C | 5Vin and D+/- | Working | |
+| 5V Regulator | For 5V | Working | |
+| DC 5-24Vin | For 5-24V input | Working/Issues | Trace width inadequate. Jumper for 5V USB to DC net not properly connected |
+| High Current Mosfets | for 5-24V output | Not Working | Redesign required. Pull up resistor over-wattage. Short to GND. Flyback bridged. |
+| Optical Isolator | 3.3V logic isolation | Working | |
+| Logic Invertor | Inverts DIO | To Be Removed | Logic does not need negation. |
+| SD Card | Read/write data | TBA | |
+| Input 5-to-3.3V Level Shifter | Steps down logic level | TBA | |
 
 ## PCB Specs
+
+<img width="1200" height="836" alt="sm_black_top" src="https://github.com/user-attachments/assets/35cbbdf6-8c85-434f-909e-3500baba582c" />
 
 - 2 layers
 - 1.6mm thickness
@@ -37,3 +43,11 @@ The PCB includes built-in pogo pin connectors to support various breakout/daught
 | Breakout | Notes |
 | ------------- | ------------- |
 | BO01162026 | First physical production run with JLCPCB. KICAD Nightly 9.99 |
+
+## Breakout/Daughterboards
+
+<img width="1200" height="237" alt="sm_white_top" src="https://github.com/user-attachments/assets/46c673bb-b144-46be-9756-3017a54b88fc" />
+
+The PCB includes built-in pogo pin connectors to support various breakout/daughterboard options.
+
+[Github page to H-Bridge breakout board.](https://github.com/0goki/-HVDLS-HBridge)
