@@ -1,10 +1,10 @@
-# High Voltage Digital Level Shifter
+# Aerotech Control Board
 
 ![IMG_5034](https://github.com/user-attachments/assets/6bfabe3d-b57f-4cef-a40a-acb8066a557a)
 
-An ESP32-based microcontroller with an opto-isolated level shifter designed to take up to 3 separate 5V TTL signals and output up to 12 channels of digital signals at 5-24V without signal inversion. The 12-channel output is also configured with flyback diodes and an isolated ground, serving as a solenoid driver supporting 12 solenoids with a total power draw of 24V at 5A.
+A Teensy 4.1-based I/O expansion microcontroller.
 
-Designed for Aerotech gantry systems running Automation1 and wired for Position Synchronized Output (PSO).
+Designed for Aerotech gantry systems running Automation1 and wired for Position Synchronized Output (PSO) and Digital Outputs (DOUT).
 
 ## Important Pinouts
 
@@ -21,6 +21,19 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 | PSO01 | GPIO 48 |
 | PSO02 | GPIO 45 |
 
+## PCB Specs
+
+- 2-layers
+- 1.6mm thickness
+- ENIG
+
+## Bill of Materials
+
+[Interactive BOM](https://0goki.github.io/MB01202026.html)
+
+[Digikey BOM](http://www.digikey.com/short/v1b47t42)
+
+
 ## Feature Testing
 
 | Feature | Description | Testing Status | Notes |
@@ -35,33 +48,31 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 | SD Card | Read/write data | Working | Read/Write using FAT32. Tested with up to 512GB Sabrent V60. |
 | Input 5-to-3.3V Level Shifter | Steps down logic level | Working | Reads 5V TTL. |
 
-## PCB Specs
+## Versions
 
-<img width="1200" height="836" alt="sm_black_top" src="https://github.com/user-attachments/assets/35cbbdf6-8c85-434f-909e-3500baba582c" />
+### Mainboard
 
-- 2 layers
-- 1.6mm thickness
-- ENIG finish
-
-## Bill of Materials
-
-[Interactive BOM](https://0goki.github.io/MB01202026.html)
-
-[Digikey BOM](http://www.digikey.com/short/v1b47t42)
-
-## Revisions
-
-| Mainboard | EDA | Production Notes |
+| Version | EDA | Notes |
 | ------------- | ------------- | ------------- |
+| 05222026 (Release 1.2) | KICAD 10.0 | Complete hardware design. Removed ESP32-S3 for Teensy 4.1. |
 | MB01202026  | KICAD Nightly 9.99 | First physical production run with JLCPCB. |
 
-| Breakout | EDA | Production Notes |
+| Version | Board |
+| ------------- | ------------- |
+| 05222026 (Release 1.2) | <img width="7684" height="3549" alt="f1f942433f7626ced174f3de3951ec44" src="https://github.com/user-attachments/assets/a9068e6b-3f3d-4a2e-add5-8225bf59c7d9" /> |
+| MB01202026  | <img width="1200" height="836" alt="sm_black_top" src="https://github.com/user-attachments/assets/35cbbdf6-8c85-434f-909e-3500baba582c" /> |
+
+### Breakout [Deprecated]
+
+| Version | EDA | Notes |
 | ------------- | ------------- | ------------- |
+| Deprecated | | Removed need for breakouts. |
 | BO01162026 | KICAD Nightly 9.99 | First physical production run with JLCPCB. |
 
-## Breakout/Daughterboards
-
-<img width="1200" height="237" alt="sm_white_top" src="https://github.com/user-attachments/assets/46c673bb-b144-46be-9756-3017a54b88fc" />
+| Version | Board |
+| ------------- | ------------- |
+| Deprecated | |
+| BO01162026 | <img width="1200" height="237" alt="sm_white_top" src="https://github.com/user-attachments/assets/46c673bb-b144-46be-9756-3017a54b88fc" /> |
 
 The PCB includes built-in pogo pin connectors to support various breakout/daughterboard options.
 
