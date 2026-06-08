@@ -29,7 +29,7 @@ Designed for Aerotech gantry systems running Automation1 and wired for Position 
 
 ## Bill of Materials
 
-[Interactive BOM](https://0goki.github.io/MB01202026.html)
+[Interactive BOM](https://0goki.github.io/Connector_Board_ibom.html)
 
 [Digikey BOM](http://www.digikey.com/short/v1b47t42)
 
